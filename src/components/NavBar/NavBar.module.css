@@ -1,0 +1,245 @@
+
+.nav {
+    position: sticky;
+    display: flex;
+    top:0;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 100%;
+    height: 70px;
+    background-color: #20338b;
+    z-index: 100;
+    transition: 0.5s;
+}
+.nav .logo {
+    height: 90%;
+    aspect-ratio: 1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    text-align: center;
+    background-color: #20338b !important;
+    margin: 5% 0 5% 2%;
+}
+.nav .logo a {
+    padding: 0;
+    font-size: 5vh;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.nav .nav-menu {
+    top: 0;
+    display: table;
+    position: relative;
+    padding: 25px 0;
+    margin-right: 2vh;
+}
+.nav .nav-menu .obj{
+    position: relative;
+    display: table-cell;
+    width: 33.333%;
+    padding: .5em .8em .0em .8em;
+}
+.nav a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 1em;
+    color: #ffffff;
+    /* text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5); */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    transition: 0.2s ease color;
+}
+.obj  a{
+    height: 100%;
+    width: 100%;
+}
+.nav .obj > a:before,
+.nav .obj > a:after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 0.2s ease transform;
+}
+.nav .obj > a:before {
+    top: 4px;
+    left: 10px;
+    width: 6px;
+    height: 6px;
+}
+.nav .obj > a:after {
+    top: 7px;
+    left: 15px;
+    width: 4px;
+    height: 4px;
+}
+.nav .obj:nth-child(1) > a:before { background-color: #ffff00;}
+.nav .obj:nth-child(1) > a:after { background-color: #ff0000;}
+
+.nav .obj:nth-child(2) > a:before {background-color: #00e2ff;}
+.nav .obj:nth-child(2) > a:after {background-color: #89ff00;}
+
+.nav .obj:nth-child(3) > a:before {background-color: #800080;}
+.nav .obj:nth-child(3) > a:after {background-color: #d87093;}
+
+.nav .obj:nth-child(4) > a:before {background-color: #001a99;}
+.nav .obj:nth-child(4) > a:after {background-color: #09972c;}
+
+.nav .obj:nth-child(5) > a:before {background-color: #ffa200;}
+.nav .obj:nth-child(5) > a:after {background-color: #ffce78;}
+
+.nav .obj:nth-child(6) > a:before {background-color: #fa50cf;}
+.nav .obj:nth-child(6) > a:after {background-color: #85ffdc;}
+
+.nav .obj:nth-child(7) > a:before { background-color: #e3315a;}
+.nav .obj:nth-child(7) > a:after { background-color: #d4ff7f;}
+
+.nav .obj:nth-child(8) > a:before { background-color: #6cff3f;}
+.nav .obj:nth-child(8) > a:after { background-color: #ffce78;}
+.nav-menu a:hover {
+    color: #bcbcbc;
+}
+.nav-menu .obj:hover a:before,
+.nav-menu .obj:hover a:after {
+    transform: scale(2);
+}
+.nav .indic {
+    position: absolute;
+    left: 2.78%;
+    bottom: 22px;
+    width: 30px;
+    height: 3px;
+    background-color: #b7b7b7;
+    border-radius: 5px;
+    transition: 0.2s ease ;
+}
+.nav .obj:nth-child(1):hover~.indic {
+    width: 38px;
+    left: 2.13% !important; 
+    background: linear-gradient(130deg, #ffff00, #ff0000);
+}
+.nav .obj:nth-child(2):hover~.indic {
+    width: 38px;
+    left: 12.3% !important;
+    background: linear-gradient(130deg, #00e1ff, #89ff00);
+}
+.nav .obj:nth-child(3):hover~.indic {
+    width: 40px;
+    left: 24.2% !important;
+    background: linear-gradient(130deg, #800080, #d87093);
+}
+.nav .obj:nth-child(4):hover~.indic {
+    width: 40px;
+    left: 38% !important;
+    background: linear-gradient(130deg, #001a99, #09972c);
+}
+.nav .obj:nth-child(5):hover~.indic {
+    width: 40px;
+    left: 51.84% !important;
+    background: linear-gradient(130deg, #ffa200, #ffce78);
+}
+
+.nav .obj:nth-child(6):hover~.indic {
+    width: 38px;
+    left: 63.4% !important;
+    background: linear-gradient(130deg, #fa50cf, #85ffdc);
+}
+
+.nav .obj:nth-child(7):hover~.indic {
+    width: 50px;
+    left: 75.9% !important;
+    background: linear-gradient(130deg, #e3315a, #d4ff7f);
+}
+
+.nav .obj:nth-child(8):hover~.indic {
+    width: 40px;
+    left: 91.2% !important;
+    background: linear-gradient(130deg, #6cff3f, #ffce78);
+}
+
+.nav .arrow:after,
+.nav .arrow:before{
+    content: "";
+    position: absolute;
+    top:50%;
+    right:4px;
+    width: 5px;
+    height: 1.5px;
+    background-color: #ffffff;
+    transition: 0.2s ease transform;
+}
+.nav .arrow:after{
+    transform: rotate(45deg);
+}
+.nav .arrow:before{
+    transform: translateX(2.4px)rotate(-45deg);
+}
+.nav .obj:hover .arrow:after {
+    transform: rotate(-45deg);
+    background: #bcbcbc;
+}
+.nav .obj:hover .arrow:before {
+    transform: translateX(2.4px)rotate(45deg);
+    background: #bcbcbc;
+}
+
+.nav .drop ul {
+    list-style-type: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    min-width: 80%;
+    width: fit-content;
+    border-radius: 2px;
+    /* background: linear-gradient(130deg, rgba(128, 0, 128, 0.648), rgba(216, 112, 147, 0.527)); */
+    box-shadow: 0 6px 5px -5px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+.nav .drop:nth-child(5) ul{
+    background-color: #20338b ;
+}
+.nav .drop:nth-child(4) ul{
+    background-color: #20338b ;
+}
+.drop li {
+    height: 0;
+    overflow: hidden;
+    text-align: center;
+    transition: all 500ms;
+}
+.drop ul li:nth-child(even) {
+    background-color: rgb(39, 57, 142); 
+}
+.obj .drop li {
+    transition-delay: 300ms;
+}
+.drop li:first-child  {
+    border-radius: 5px 5px 0 0;
+}
+.drop li:last-child  {
+    border-radius: 0 0 5px 5px;
+}
+.drop li:hover{
+    background-color: #3939bf;
+    color: #a1a1a1;
+}
+.drop li:first-child a:hover::before {
+    border-bottom-color: #EEE;
+}
+.drop.drop:hover li {          
+    height: fit-content;
+    padding-bottom: 5px;
+}
+.drop:hover li:first-child {
+    padding-top: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+   .nav-menu{display: none !important;}
+   .hamburger{display: inline-block !important;}
+}
