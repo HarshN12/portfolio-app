@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Varela+Round&display=swap');
+
+.header {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 60dvh;
+    width: 100%;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    height: fit-content;
+    margin: 0 4%;
+}
+
+.pimg {
+    position: relative;
+}
+
+.sir_name {
+    background-color: #024baac0;
+    min-height: 20vh;
+    height: fit-content;
+    width: 43vw;
+    margin: 0 5%;
+    border-radius: 10px;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}  .sir_name:hover {
+    background-color: #024baad7;
+    width: 44vw;
+
+}
+
+.header h1 {
+    margin: .67em ;
+    color: white;
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.header h2 {
+    margin-left: 25px;
+    margin-top: -20px;
+    color: white;
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.details {
+    background-color: rgb(255, 255, 255);
+}
+
+.profile {
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 6px;
+    border-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}

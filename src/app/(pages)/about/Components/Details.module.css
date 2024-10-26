@@ -1,0 +1,57 @@
+.details{
+    margin: 2vh auto;
+}
+
+.container{
+    border-width: 2px;
+    border-color:black;
+    height: fit-content;
+    width: 80%;
+    margin: 2vh auto;
+    padding: 1vh 2% ;
+    transition-duration: 0.3s;
+    transition-timing-function:ease-in-out;
+
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.container:hover{
+    padding-top:0.2vh;
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+}
+
+.container h2{
+    font-family: "Lobster", sans-serif;
+    margin: .83em 0;
+    font-weight: 400;
+    font-style: normal;
+    color: #ff4805;
+}
+.container h3 {
+    color: black;
+    margin: 1em 0 1em 5%;
+    font-family: "Varela Round", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.container ul  {
+    list-style-type: none; /* No default bullets */
+    padding-left: 0; 
+    margin-left: 5%;
+}
+.container ul  li {
+    font-family: monospace;
+    font-size: 1.2em;
+    line-height: 2em;
+    padding-left: 1em; 
+    text-indent: -1em;
+}
+.container ul  li::before {
+    content: '• '; /* Custom bullet */
+    color: black; 
+    padding-right: 0.5em; 
+}
+.container ul li:nth-child(even){
+    background-color: rgba(229, 238, 243, 0.845);
+}

@@ -1,9 +1,13 @@
-import clg_logo from '/assets/1709208978519.jpeg';
-import X_logo from '/assets/x.svg';
-import insta_logo from '/assets/instagram.svg';
-import Gmail_logo from '/assets/gmail.svg';
-import linkin_logo from '/assets/linkedin.svg'
 import styles from './Footer.module.css';
+
+
+const clg_logo = '/assets/1709208978519.jpeg';
+const X_logo = '/assets/x.svg';
+const insta_logo = '/assets/instagram.svg';
+const Gmail_logo = '/assets/gmail.svg';
+const linkin_logo = '/assets/linkedin.svg';
+
+
 function Footer() {
   return (
     <footer>
