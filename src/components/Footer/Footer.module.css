@@ -1,4 +1,4 @@
-footer {
+.footer {
     position: relative;
     display: flex;
     flex-wrap: nowrap;
@@ -10,7 +10,7 @@ footer {
     overflow: hidden;
 }
 
-footer .ftr-ctr1 {
+.footer .ftr-ctr1 {
     display: block;
     align-items: center;
     align-content: center;
@@ -20,7 +20,7 @@ footer .ftr-ctr1 {
     transform: translateY(-50px);
 }
 
-footer .college_name {
+.footer .college_name {
     text-align: center;
     font-family: Bungee Hairline;
     color: white;
@@ -30,7 +30,7 @@ footer .college_name {
     display: inline-block;
 }
 
-footer .college_address {
+.footer .college_address {
     text-align: center;
     font-family: Bungee Hairline;
     font-size: 13px;
@@ -39,7 +39,7 @@ footer .college_address {
     line-height: 15px;
 }
 
-footer .v {
+.footer .v {
     position: absolute;
     top:50%;
     transform: translateY(-50%);
@@ -49,21 +49,21 @@ footer .v {
     height: 235px;
 }
 
-footer .ftr-ctr2 {
+.footer .ftr-ctr2 {
     width: fit-content;
     display: flex;
     padding: 0%;
     justify-content: center;
     align-items: center;
 }
-footer .map {
+.footer .map {
     /* width: fit-content; */
     min-width: 40vw;
     position: inherit;
     padding: 0 1% 0 1%;
     border-radius: 20px;
 }
-footer .ftr-ctr3 {
+.footer .ftr-ctr3 {
     width: fit-content;
     background-color: rgb(2, 75, 170);
     display: flex;
@@ -89,7 +89,7 @@ footer .ftr-ctr3 {
     border-bottom-style: solid;
     width: 200px
 }
-footer .logos{
+.footer .logos{
     width: 100%;
     margin-top: 5vh;
     display: flex;
@@ -169,7 +169,7 @@ footer .logos{
 }
 
 @media only screen and (max-width: 700px) {
-    footer{
+    .footer{
         /* flex-direction: column; */
         flex-wrap: wrap;
         align-items: center;
@@ -177,44 +177,44 @@ footer .logos{
         justify-content: space-evenly;
         padding-bottom: 4vh;
     }
-    footer .ftr-ctr1 {
+    .footer .ftr-ctr1 {
         align-items: center;
         transform: none;
     }
-    footer .college_name{
+    .footer .college_name{
         line-height: 80%;
     }
-    footer .ftr-ctr1 .logo{
+    .footer .ftr-ctr1 .logo{
         height: 100px;
         object-fit: cover; /* Ensure the image covers the entire container */
         clip-path: inset(0);
     }
-    footer .ftr-ctr3 {
+    .footer .ftr-ctr3 {
         margin-top: 0;
     }
  }
 
  
 @media only screen and (max-width: 525px){
-    footer .ftr-ctr1 {
+    .footer .ftr-ctr1 {
         align-items: center;
     }
-    footer{
+    .footer{
         flex-wrap: nowrap;
         flex-direction: column;
         padding: 0 2%;
 
     }
-    footer .ftr-ctr2 {
+    .footer .ftr-ctr2 {
         padding: 3vh 0;
     }
 }
  
 @media only screen and (max-width: 1200px){
-    footer .v{
+    .footer .v{
         display: none;
     }
-    footer .ftr-ctr1 {
+    .footer .ftr-ctr1 {
         display: flex;
     }
 }

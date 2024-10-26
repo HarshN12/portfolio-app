@@ -10,7 +10,7 @@ const linkin_logo = '/assets/linkedin.svg';
 
 function Footer() {
   return (
-    <footer>
+    <footer className={styles['footer']}>
       <div className={styles['ftr-ctr1']}>
         <img className={styles['logo']} src={clg_logo} width="200px" alt="IIT Jammu Logo" />
         <div>
