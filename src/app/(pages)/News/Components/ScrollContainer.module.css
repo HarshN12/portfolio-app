@@ -1,0 +1,39 @@
+.scrollContainer {
+    position: sticky;
+  background-color: blue;
+  font-size: large;
+  color: white;
+  overflow: hidden;
+}
+
+.scrollText {
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  -moz-animation: right-left 15s linear infinite;
+  -webkit-animation: right-left 15s linear infinite;
+  animation: right-left 15s linear infinite;
+}
+
+@-moz-keyframes right-left {
+  from { -moz-transform: translateX(100%); }
+  to { -moz-transform: translateX(-100%); }
+}
+
+@-webkit-keyframes right-left {
+  from { -webkit-transform: translateX(100%); }
+  to { -webkit-transform: translateX(-100%); }
+}
+
+@keyframes right-left {
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
