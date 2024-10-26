@@ -36,7 +36,7 @@ export default function Nav_bar() {
   }, [prevScrollPos]);
 
   return (
-    <nav className={styles['nav']}>
+    <nav className={styles['nav']} style={{ top: navTop }}>
       <div className={styles['logo']} style={{ backgroundImage: `url('${nav_logo}')` }}>
         <Link href="/"></Link>
       </div>
