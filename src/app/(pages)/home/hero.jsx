@@ -10,7 +10,7 @@ function Header(){
       <div className={styles['bluebox']}>
         <div className={styles['detail']}>
           <div>
-          <img className={styles['bond']} src={bond_svg} width="65px" alt="Avatar" />
+          {/* <img className={styles['bond']} src={bond_svg} width="65px" alt="Avatar" /> */}
           <h1>Dr. Yogesh Madhukarrao Nimdeo</h1>
           <h2>Assistant Professor</h2>
           <h2>HOD of Chemical Engineering Department <br/>At IIT Jammu</h2>

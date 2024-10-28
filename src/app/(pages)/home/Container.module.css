@@ -3,6 +3,7 @@
 .ctr-1 {
   height: fit-content;
   width: 70%;
+  min-width: 840px;
   background: #ffffff;
   margin: 0 auto;
   padding: 3% 5%;
@@ -56,4 +57,12 @@
   padding-right: 0.5em;
 }.Research ul li:nth-child(even) {
   background-color: rgba(229, 238, 243, 0.845);
+}
+
+
+@media screen and (max-width: 900px){
+  .ctr-1{
+    width: 96%;
+    min-width: 250px;
+  }
 }

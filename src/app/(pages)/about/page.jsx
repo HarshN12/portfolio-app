@@ -1,11 +1,11 @@
 import React from 'react';
 import Details from './Components/Details'
-import Header from './Components/Header'
+import Head from './Components/Head'
 
 function About() {
     return (
         <div className='page about'>
-            <Header/>
+            <Head/>
             <Details />
         </div>
     );

@@ -43,7 +43,7 @@ export default function Nav_bar() {
       <div id="nav-menu" className={styles['nav-menu']}>
         <div className={styles['obj']}><Link href="/">Home</Link></div>
         <div className={styles['obj']}><Link href="/about">About</Link></div>
-        <div className={styles['obj']}><Link href="/activity">Activities</Link></div>
+        <div className={styles['obj']}><Link href="/activities">Activities</Link></div>
         <div className={`${styles['obj']} ${styles['drop']}`}>
           <Link href="/research">Research
             <div>
@@ -51,8 +51,8 @@ export default function Nav_bar() {
             </div>
           </Link>
           <ul>
-            <li><Link href="/collaboration">Collaboration</Link></li>
-            <li><Link href="/facilities">Facilities</Link></li>
+            <li><Link href="/research/collaboration">Collaboration</Link></li>
+            <li><Link href="/research/facilities">Facilities</Link></li>
           </ul>
         </div>
         <div className={`${styles['obj']} ${styles['drop']}`}>
@@ -62,10 +62,10 @@ export default function Nav_bar() {
             </div>
           </Link>
           <ul>
-            <li><Link href="/ug">UG</Link></li>
-            <li><Link href="/pg">PG</Link></li>
-            <li><Link href="/PhD">PHD</Link></li>
-            <li><Link href="/Intern">Intern</Link></li>
+            <li><Link href="/members/ug">UG</Link></li>
+            <li><Link href="/members/pg">PG</Link></li>
+            <li><Link href="/members/phd">PHD</Link></li>
+            <li><Link href="/members/intern">Intern</Link></li>
           </ul>
         </div>
         <div className={styles['obj']}><Link href="/news">News</Link></div>
