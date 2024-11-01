@@ -55,9 +55,10 @@
   content: '• ';
   color: black;
   padding-right: 0.5em;
-}.Research ul li:nth-child(even) {
-  background-color: rgba(229, 238, 243, 0.845);
 }
+/* .Research ul li:nth-child(even) {
+  background-color: rgba(229, 238, 243, 0.845);
+} */
 
 
 @media screen and (max-width: 900px){
